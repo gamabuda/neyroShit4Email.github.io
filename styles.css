@@ -1,0 +1,90 @@
+/* 
+Иконки взял с гугла:
+https://fonts.google.com/?selected=Material+Symbols+Outlined:undo:FILL@1;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e8eaed 
+
+Большая часть стилизации bootstrap:
+https://getbootstrap.com/
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #0063f9, #c5dbdc);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) { /* Медиазапрос для мобильных устройств */
+  .page {
+    flex-direction: column; /* Для экранов шириной до 768px располагаем в столбец */
+  }
+}
+
+.canvas-container
+{
+  width: 35vw;
+  min-width: 300px;
+  background: #fff;
+/*   margin: 100px; */
+  padding: 20px 14px 8px 14px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -webkit-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -moz-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+}
+
+.info-container {
+    height: 75%;
+    width: 25%;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px 14px 8px 14px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+    -webkit-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+    -moz-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+}
+
+.imgBx img
+{
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.imgBx canvas
+{
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.range-container{
+    margin: 0.5rem 2rem 0 2rem;
+    max-width: 500px;
+}
